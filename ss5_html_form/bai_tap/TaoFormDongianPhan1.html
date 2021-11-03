@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo Form Cơ Bản Phần 1</title>
+    <link rel="stylesheet" href="TaoFormDongianPhan1.css">
+</head>
+<body>
+<form>
+<div class="Lop">
+    <br>
+    <div class="Lop2">
+        <div class="Lop3">
+            <h1 style="border: outset;border-color: white">SỞ THÍCH CỦA BẠN</h1>
+        </div>
+        <p style="margin-left: 50px ; color: blue; font-size: 20px">Họ Và Tên<input class="name" size="50" type="text" name="yourname" ></p>
+        <p style="margin-left: 90px ; color: blue; font-size: 20px">Email<input class="email" size="30" type="text" name="email"></p>
+        <p style="margin-left: 70px ; color: blue; font-size: 20px">Sở thích</p>
+        <div class="hobby">
+            <input class="hobby_item" type="checkbox" name="hobby" value="on">Thể thao
+            <input class="hobby_item" type="checkbox" name="hobby" value="on" style="margin-left: 13px" >Âm nhạc
+            <input class="hobby_item" type="checkbox" name="hobby" value="on" style="margin-left: 22px" >Đọc sách
+            <br>
+            <input class="hobby_item" type="checkbox" name="hobby" value="on" >Lướt wed
+            <input class="hobby_item" type="checkbox" name="hobby" value="on" >Chơi game
+            <input class="hobby_item" type="checkbox" name="hobby" value="on" >Du lịch
+            <br>
+            <input class="hobby_item" type="checkbox" name="hobby" value="on">Điện Ảnh
+        </div>
+        <div class="information">
+            <input type="button"  style="border: outset" name="Submit Form" value="Gửi thông tin">
+            <input type="button" style="border: outset " name="Reset form" value="Nhập lại">
+        </div>
+    </div>
+</div>
+</form> <br> <br> <br>
+<!-- Đăng ký học viên -->
+<form>
+<div class="Khung">
+    <br>
+    <div class="Khung1">
+        <h2>ĐĂNG KÝ HỌC VIÊN</h2>
+        <p>Họ Và Tên<input class="name" type="text" size="50"  ></p>
+        <p>Ngày Sinh<input class="name" type="text" size="30"  style="margin-left: 53px"></p>
+        <p>Giới tính</p>
+        <div class="Mangirl">
+            <input class="Mangirl1" type="radio" name="mangirrl" value="on">Nam
+            <input class="Mangirl1" type="radio" name="mangirrl" value="on">Nữ
+        </div>
+        <p>Địa chỉ</p>
+            <input class="name2" type="text">
+        <div class="Class">
+            <p>Lớp
+                <select class="Chon1" >
+                    <option >--Chọn lớp--</option>
+                    <option >1</option>
+                    <option >2</option>
+                </select>
+            </p>
+        </div>
+        <p>Email<input class="name" type="text" size="30"  style="margin-left: 86px"></p>
+        <p>Điện thoại<input class="name" type="text" size="30"  style="margin-left: 50px"></p>
+        <div class="information1">
+            <input type="button"  style="border: outset"  name="Submit Form" value="Đăng ký">
+            <input type="button" style="border: outset " name="Reset form" value="Nhập lại">
+        </div>
+</div>
+</form>
+</body>
+</html>

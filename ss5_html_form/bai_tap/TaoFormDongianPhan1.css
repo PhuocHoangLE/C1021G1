@@ -1,0 +1,94 @@
+.Lop{
+    background: aquamarine;
+    width: 800px;
+    height: 390px;
+}
+.Lop2{
+    margin-top: -20px;
+    margin-left: 25px;
+    background: white;
+    width: 750px;
+    height: 350px;
+}
+.Lop3{
+    text-align: center;
+    background: red;
+}
+.Lop3 h1{
+    font-family:"Courier New";
+    color:white;
+}
+.name{
+    border: inset;
+    height: 25px;
+    margin-left: 50px;
+}
+.email{
+    border: inset;
+    height: 25px;
+    margin-left: 50px;
+}
+.hobby{
+    color: darkorange;
+    margin-left: 150px;
+    margin-top: -40px;
+    font-size: 25px;
+}
+.information{
+    position: relative;
+    margin-left: 150px;
+    top: 20px ;
+}
+.Khung{
+    background: #FFFF99;
+    width: 900px;
+    height: 600px;
+}
+.Khung1{
+    margin-left: 10px;
+    margin-top: -20px;
+    background: aquamarine;
+    width: 880px;
+    height: 50px;
+}
+.Khung1 h2{
+    font-family:Algerian;
+    text-align: left;
+    color: blue;
+    font-size: 40px;
+    margin-top: 20px;
+}
+.Khung1 p{
+    font-size: 20px;
+    color: blue;
+}
+.Mangirl{
+    font-size: 25px;
+    margin-top: -45px;
+    margin-left: 131px;
+}
+.name2{
+    margin-left: 136px;
+    margin-top: -100px;
+    border: inset;
+    width: 300px;
+    height: 100px;
+}
+.Class .Chon1{
+    font-size: 20px;
+    width: 150px;
+    margin-left: 97px;
+    border: inset;
+}
+.information1{
+
+    margin-left: 150px;
+
+
+}
+
+
+
+
+
+
