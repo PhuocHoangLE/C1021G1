@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h1>Caculartor</h1>
+<body>
+<input type="text" id="input1">
+<input type="text" id="input2">
+<input type="button" onclick="cong()" value="Cộng">
+<input type="button" onclick="tru()" value="Trừ">
+<input type="button" onclick="nhan()" value="Nhân">
+<input type="button" onclick="chia()" value="Chia">
+<p id="ketQua"></p>
+<script>
+    function cong(){
+        let value1= parseFloat(document.getElementById("input1").value);
+        let value2 = parseFloat(document.getElementById("input2").value);
+        alert("tổng 2 số"+ (value1 +value2));
+    }
+    function tru(){
+        let value1= parseInt(document.getElementById("input1").value);
+        let value2 = parseInt(document.getElementById("input2").value);
+        alert("tổng 2 số"+ (value1 - value2));
+    }
+    function nhan(){
+        let value1= parseInt(document.getElementById("input1").value);
+        let value2 = parseInt(document.getElementById("input2").value);
+        alert("tổng 2 số"+ (value1 * value2));
+    }
+    function chia(){
+        let value1= parseInt(document.getElementById("input1").value);
+        let value2 = parseInt(document.getElementById("input2").value);
+        if (value2!=0){
+            document.getElementById("ketQua").innerHTML ="ket qua chia 2 số"+ (value1/value2);
+        }else {
+            alert("không được thực hiện phép chia cho 0")
+        }
+
+    }
+</script>
+</body>
+</html>
