@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Tính Cước Điện Thoại </title>
+</head>
+<body>
+<script>
+    /*
+    Phí thuê bao bắt buộc là 25 nghìn.
+    600 đồng cho mỗi gọi của 50 phút đầu tiên.
+    400 đồng cho mỗi phút gọi của 150 phút tiếp theo.
+    200 đồng cho bất kỳ mỗi phút nào sau 200 phút đầu tiên.
+     */
+    let enter = parseInt(prompt("Nhập vào số phút đã sử dụng")) ;
+    let phicodinh = 25 ;
+    if ( enter > 200 ){
+        phi = ( enter - 200) * 200 + 150 * 400 + 50 * 600;
+    } else if ( enter > 50 ){
+        phi = ( enter - 50) * 400 + 50 * 600;
+    } else {
+        phi = enter * 600;
+    }
+    total = 0.01 * phi + phicodinh ;
+    document.write("Bạn đã gọi " + enter + " phút " + "<br>" + "Số tiền cần phải trả : " + total )
+</script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Máy tính đơn giản </title>
+</head>
+<body>
+<div class="picture" style="background: red; height: 280px;width: 400px ; border: 10px solid black">
+    <input id="window" type="text" style="height: 30px;width: 380px ; margin-left: 5px ; margin-top: 10px">
+    <table>
+        <tr>
+            <td><input type="button" value="1" onclick="nhap(this.value)"></td>
+            <td><input type="button" value="2" onclick="nhap(this.value)"></td>
+            <td><input type="button" value="3" onclick="nhap(this.value)"></td>
+            <td><input type="button" value="+" onclick="nhap(this.value)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="nhap(this.value)"></td>
+            <td><input type="button" value="5" onclick="nhap(this.value)"></td>
+            <td><input type="button" value="6" onclick="nhap(this.value)"></td>
+            <td><input type="button" value="-" onclick="nhap(this.value)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="nhap(this.value)"></td>
+            <td><input type="button" value="8" onclick="nhap(this.value)"></td>
+            <td><input type="button" value="9" onclick="nhap(this.value)"></td>
+            <td><button type="button" value="*" onclick="nhap(this.value)" >X</button></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="C" onclick="xoa()"></td>
+            <td><input type="button" value="0" onclick="nhap(this.value)"></td>
+            <td><input type="button" value="=" onclick="tinhKetQua()"></td>
+            <td><input type="button" value="/" onclick="nhap(this.value)"></td>
+        </tr>
+
+    </table>
+    <style>
+        button{
+            font-size: 20px;
+            color: blue;
+            margin-top: 2px;
+            margin-left: 4px;
+            width: 90px;
+            height: 50px;
+        }
+        input{
+            font-size: 20px;
+            color: blue;
+            margin-top: 2px;
+            margin-left: 4px;
+            width: 90px;
+            height: 50px;
+        }
+    </style>
+<script>
+    function nhap(number) {
+        document.getElementById("window").value += number ;
+    }
+    function tinhKetQua() {
+        let bieuthuc = document.getElementById("window").value ;
+        // hàm eval() đùng để thực hiện tính 1 giá trị 1 biểu thức
+        document.getElementById("window").value = eval(bieuthuc)
+    }
+    function xoa() {
+        document.getElementById("window").value = ""
+    }
+</script>
+</div>
+
+</body>
+</html>

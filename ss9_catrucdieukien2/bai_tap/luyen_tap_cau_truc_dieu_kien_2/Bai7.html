@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Giải phương trình bậc 2 </title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt(" A = ")) ;
+    let b = parseFloat(prompt(" B = ")) ;
+    let c = parseFloat(prompt(" C = ")) ;
+    let detal = b * b - 4 * a * c ;
+    let X1 = (-b+Math.sqrt(detal))/2*a;
+    let X2 = (-b-Math.sqrt(detal))/2*a;
+    if ( detal < 0 ){
+        alert("Phương trình vô số nghiệm")
+    } else if ( detal === 0 ){
+        alert("Phương trình có nghiệm kép X=" +-b/2*a)
+    }else {
+        alert("Phương trình có nghiệm X1=" + X1 + "và X2" +X2 )
+    }
+</script>
+
+</body>
+</html>

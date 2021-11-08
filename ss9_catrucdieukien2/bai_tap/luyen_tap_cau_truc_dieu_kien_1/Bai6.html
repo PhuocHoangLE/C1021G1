@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Tính Hoa Hồng</title>
+</head>
+<body>
+<script>
+    let doanhso = parseFloat(prompt("Nhập vào doanh số bán được ( Triệu đông ) ")) ;
+    if ( doanhso >= 100){
+        hoahong = doanhso * 5 / 100 ;
+    } else if (doanhso >= 200){
+        hoahong = doanhso * 10 / 100 ;
+    } else {
+        hoahong = doanhso * 15 / 100 ;
+    }
+    alert("Doanh số bán được là : " + doanhso + " Triệu Đồng " + "\n" + "Hoa hồng nhận được là : " + hoahong + " Triệu Đồng " ) ;
+</script>
+
+</body>
+</html>

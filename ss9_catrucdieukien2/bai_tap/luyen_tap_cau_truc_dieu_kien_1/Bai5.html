@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Xếp học lực bằng điểm </title>
+</head>
+<body>
+<script>
+    let kiemtra = parseInt(prompt("Nhập vào điểm kiểm tra ")) ;
+    let giuaky = parseInt(prompt("Nhập vào điểm giữa kỳ ")) ;
+    let cuoiky = parseInt(prompt("Nhập vào điểm cuối kỳ")) ;
+    let total = ( kiemtra + giuaky + cuoiky ) / 3 ;
+    if (total >= 9){
+        alert("Học lực giỏi") ;
+    } else if (total >= 7){
+        alert("Học lực khá")
+    } else if (total >= 5){
+        alert("Học lực trung bình")
+    } else {
+        alert("Học lực yếu")
+    }
+</script>
+
+</body>
+</html>

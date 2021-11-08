@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Tính giá điện</title>
+</head>
+<body>
+<script>
+    let soDien = prompt("Nhập số điện sử dụng (kWh):")
+    let bac1 = 1678; let bac2 = 1734 ; let bac3 = 2014 ;
+    let bac4 = 2536; let bac5 = 2834 ; let bac6 = 2927 ;
+    let tienDien=0;
+    if (soDien<0){
+        alert("Vui lòng nhập lại số điện\n Số điện phải lớn hơn 0")}
+    else if (soDien <= 50){
+        tienDien = soDien * bac1 ;}
+    else  if (soDien <= 100){
+        tienDien = (soDien - 50)*bac2+50*bac1;}
+    else if (soDien <= 200){
+        tienDien = (soDien - 100)*bac3+bac2*50+bac1*50;}
+    else if (soDien <= 300){
+        tienDien = (soDien - 200)*bac4+bac3*100+bac2*50+bac1*50;}
+    else if (soDien <= 400){
+        tienDien = (soDien - 300)*bac5+bac4*100+bac3*100+bac2*50+bac1*50;}
+    else {
+        tienDien = (soDien - 400)*bac6+bac5*100+bac4*100+bac3*50+bac2*50+bac1*50;}
+    alert("Bạn đã sử dụng : " + soDien + " kWh điện" + "\n Số điện bạn phải trả là : " + tienDien +" đồng")
+</script>
+
+
+</body>
+</html>

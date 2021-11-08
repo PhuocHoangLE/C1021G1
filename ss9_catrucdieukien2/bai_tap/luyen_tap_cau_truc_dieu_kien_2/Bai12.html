@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Tính lãi ngân hàng </title>
+</head>
+<body>
+<script>
+    let tienVon = parseInt(prompt("Nhập số tiền ban đầu (Triệu Đồng) : "));
+    let soThang = parseInt(prompt("Nhập số tháng cho vay : ")) ;
+    let laiXuat = parseInt(prompt("Nhập lãi xuất hàng tháng (%) : ")) ;
+    for ( i = 1 ; i <= soThang ; i++ ){
+        tienLai = (tienVon * laiXuat * soThang) / 100 ;
+    }
+    alert("Số tiền ban đầu là : " +tienVon+ " triệu đồng " + "\n" +
+    "Với lãi xuất hàng tháng : " + laiXuat + " %/tháng " + "\n" +
+    "Tiền lãi là " +tienLai+ "%")
+</script>
+
+</body>
+</html>
