@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function kiemTra(a, b) {
+        let sumA = 0;
+        let sumB = 0;
+        for (let i = 1; i < a - 1; i++) {
+            if (a % i === 0) {
+                sumA += i;
+            }
+        }
+        for (let j = 1; j < b - 1; j++) {
+            if (b % j === 0) {
+                sumB += j;
+            }
+        }
+        if (sumA === b && sumB === a) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    let soA = parseInt(prompt("Nhập vào số nguyên dương thứ nhất"));
+    let soB = parseInt(prompt("Nhập vào số nguyên dương thứ hai"));
+    if (kiemTra(soA, soB)) {
+        alert("Hai số " + soA + "-" + soB + " là cặp số thân thiết");
+    } else {
+        alert("Hai số " + soA + "-" + soB + " không phải là cặp số thân thiết");
+    }
+</script>
+</body>
+</html>
