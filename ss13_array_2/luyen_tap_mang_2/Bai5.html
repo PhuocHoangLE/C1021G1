@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Viết một chương trình nhập vào 2 chuỗi, sau đó kiểm tra
+        xem hai chuỗi có giống nhau hay không.</title>
+</head>
+<body>
+<script>
+    let str1 = prompt("Nhập vào chuổi 1: ") ;
+    let str2 = prompt("Nhập vào chuỗi 2: ") ;
+    let soSanh = str1.includes(str2) ; // Hàm includes để kiểm tra phần từ có trong phần tử khác không
+    if (soSanh){
+        alert("Hai chuỗi vừa nhập giống nhau") ;
+    } else {
+        alert("Hai chuỗi vừa nhập khác nhau")
+    }
+</script>
+
+</body>
+</html>

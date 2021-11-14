@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử.
+        trình sắp xếp mảng theo thứ tự giảm dần và hiển thị ra mảng đã được sắp xếp.</title>
+</head>
+<body>
+<script>
+    let arr = [] ;
+    let enter = parseInt(prompt("Nhập vào mảng số nguyên")) ;
+    for ( let i = 0 ; i < 10 ; i++ ){
+        arr[i] = parseInt(prompt("Nhập phần tử thứ i : " + (i+1) )) ;
+    }
+    arr.sort(function (a,b) {
+        return a - b ;
+    })
+    document.write("Các phần tử sắp xếp theo thứ tự giảm dần là :" +arr)
+</script>
+
+</body>
+</html>

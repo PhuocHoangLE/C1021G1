@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>: Viết một chương trình để đếm số từ trong một chuỗi</title>
+</head>
+<body>
+<script>
+    let str = prompt("Nhập một chuỗi : ") ;
+    str = str.split(" ") ;
+    let soTu = 0
+    for ( let i = 0 ; i < str.length ; i++){
+        if (str[i] !== " "){
+            soTu++ ;
+        }
+    }
+    document.write("Số từ trong chuỗi vừa nhập là : " +soTu)
+
+</script>
+
+</body>
+</html>

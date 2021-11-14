@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Nhập vào số sau đó tìm xem có nằm trong mảng không </title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let soNguyen = prompt("Nhập số nguyên V:")
+    for (let i=0 ; i<10 ; i++){
+        arr[i] =prompt("Nhập phần tử tại vị trí: "+i)}
+    let n = arr.includes(soNguyen)
+    //hàm includes để kiểm tra phần tử có trong mảng hay không
+    if( n === true ){
+        alert("V is in the array")
+    }
+    else {
+        alert('V is not in the array')
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button"  onclick="play()">Play</button>
+<script>
+    function play() {
+        let khoang = parseInt(prompt("Nhập vào khoảng dự đoán"))
+        let soDuDoan = parseInt(Math.random() * khoang) ;
+        for( let i = 0 ; i <= 10 ; i++){
+            soNhap = parseInt(prompt("Nhập số bấy kỳ khoảng đã chọn"))
+            if (soNhap === soDuDoan) {
+                alert("Đúng")
+                break
+            } else  if(soNhap < soDuDoan){
+                alert("Số vừa nhậo nhỏ hơn , thử lại số khác")
+            } else {
+                alert("Số vừa nhập lớn hơn , thử lại số khác")
+            }
+
+        }
+    }
+</script>
+
+</body>
+</html>

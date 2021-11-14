@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Nhận một số nhập vào và chèn dấu (-) giữa 2  số chẵn </title>
+</head>
+<body>
+<script>
+    /*
+    let number = parseInt(prompt("Nhập vào số lượng cần in ra")) ;
+    let a = [] ;
+    for ( let i = 0 ; i <= number ; i++){
+        a[i] = parseInt(prompt("Nhập vào số cần in ra")) ;
+        if (a[i] % 2 === 0 ){
+            document.write(a[i] + "-")
+        } else {
+            document.write(a[i] + " ")
+        }
+    }
+
+     */
+    const num=window.prompt();
+    const str = num.toString();
+    const result = [str[0]];
+
+    for(let x=1; x<str.length; x++)
+    {
+        if((str[x-1]%2 === 0)&&(str[x]%2 === 0))
+        {
+            result.push('-', str[x]);
+        }
+        else
+        {
+            result.push(str[x]);
+        }
+    }
+    console.log(result.join(''));
+
+</script>
+
+</body>
+</html>

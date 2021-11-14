@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình nhập vào một mảng ký tự, tìm tất cả các ký tự trong mảng
+        là (-) và thay thế các ký tự này bởi ký tự ( _ )</title>
+</head>
+<body>
+<script>
+    let enter = prompt("Nhập vào mảng ký tự") ;
+    let a = [] ;
+    let c ;
+    for (let i = 0 ; i < enter ; i++){
+        a[i] = prompt("Nhập phần tử thứ " + (i+1)) ;
+        c = a.indexOf('-') ; // hàm indexOf tìm giá trị sau đó thay giá trị mới cho nó
+        if (c !== -1){
+            a[c] = '_'
+        }
+    }
+    document.write(" Mảng a sau khi thay đổi là : " + a) ;
+
+
+</script>
+
+</body>
+</html>

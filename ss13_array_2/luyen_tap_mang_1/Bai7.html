@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử,
+        nhập/tạo phần tử số nguyên V. Chương trình kiểm tra xem V có thuộc mảng đã cho không,
+        nếu V thuộc mảng đã cho xoá V khỏi mảng (Bản chất việc xoá ở đây tức là dịch phần tử ở bên phải V sang vị trí của V,
+        và gán 0 cho phần tử cuối cùng của mảng)</title>
+</head>
+<body>
+<script>
+    let arr = [] ;
+    let soNguyenV = parseInt(prompt("Nhập số nguyên V : " )) ;
+    for ( let i = 0 ; i < 10  ; i++) {
+        arr[i] = parseInt(prompt("Nhập phàn tử thứ " + ( i + 1))) ;
+        if ( arr[i] === soNguyenV){
+            arr.splice( i , 1 , arr[i+1]) ;
+            // Hàm splice dùng để dịch chuyển phần tử bên phải V vào vị trí của V
+            arr[arr.length-1] = 0 ; // Gán phần tử cuối cũng của mảng = 0 ;
+        }
+    }
+    alert(arr)
+</script>
+
+
+</body>
+</html>
