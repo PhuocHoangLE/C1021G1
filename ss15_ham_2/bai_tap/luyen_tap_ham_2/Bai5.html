@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.</title>
+</head>
+<body>
+<script>
+    function soNguyen(a,b,c) {
+        if (a < b && a < c){
+            document.write("Giá trị nhỏ nhất là : " +a)
+        } else if ( b < c){
+            document.write("Giá trị nhỏ nhất là : " +b )
+        } else {
+            document.write("Giá trị nhỏ nhất là : " +c)
+        }
+    }
+    let a = prompt("Nhập vào 3 số bất kỳ") ;
+    let b = prompt("Nhập vao 3 số bất kỳ") ;
+    let c = prompt("Nhập vao 3 số bất kỳ") ;
+    soNguyen(a,b,c)
+</script>
+
+</body>
+</html>

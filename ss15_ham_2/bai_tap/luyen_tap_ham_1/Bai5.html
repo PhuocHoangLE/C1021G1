@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Tìm phần tử của a trong b và hiển thị chúng </title>
+</head>
+<body>
+<script>
+    let a = ["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"]
+    let b = ["Ursa Minor","Tarurus","Cygnus","Lyra","Aquila","Ursa Major","Leo"]
+    function ham(enter) {
+        for ( let i = 0 ; i < a.length ; i++){
+            if (enter === a[i]){
+                document.write(b[i]) ;
+            }
+        }
+    }
+    let enter = prompt("Nhập tên ngôi sao cần tìm")
+    ham(enter) ;
+</script>
+
+
+</body>
+</html>

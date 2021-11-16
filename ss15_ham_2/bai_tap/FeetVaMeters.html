@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Chuyển đổi feet sang meters </title>
+</head>
+<body>
+<script>
+    function footToMeter(foot) {
+        meter = parseFloat( 0.305 * foot) ;
+        return meter ;
+    }
+    function meterToFoot(meter) {
+        foot = parseFloat( 3.279 * meter) ;
+        return foot ;
+    }
+    let meter ;
+    let foot ;
+    footToMeter(1.0)
+    meterToFoot(20.0)
+    document.write("Feet sang Meters : " + meter + "<br>" + " Meters sang Feet : " + foot) ;
+
+</script>
+
+</body>
+</html>
