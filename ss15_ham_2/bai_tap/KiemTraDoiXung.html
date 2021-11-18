@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Kiểm tra đối xứng </title>
+</head>
+<body>
+<script>
+    function isPalindrome(str) {
+        for ( let i = 0 ; i < str.length / 2 ; i++) {
+            if ( str[i] !== str[str.length - i - 1]) {
+                return false;
+            }
+        }
+        return true;
+    }
+    alert(isPalindrome("abba")) ;
+</script>
+
+</body>
+</html>
