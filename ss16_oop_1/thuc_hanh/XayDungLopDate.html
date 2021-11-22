@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Xây dựng lớp Date</title>
+</head>
+<body>
+<script>
+    /* Cách 1 : dùng Function
+    let MyData = function (ngay,thang,nam) {
+        this.day = ngay ;
+        this.month = thang ;
+        this.year = nam ;
+        this.getDay = function () {
+            return this.day ;
+        }
+        this.getMonth = function () {
+            return this.month ;
+        }
+        this.getYear = function () {
+            return this.year ;
+        }
+        this.setDay = function (d) {
+            this.day = d ;
+        }
+        this.setMonth = function (m) {
+            this.month = m ;
+        }
+        this.setYear = function (y) {
+            this.year = y ;
+
+        }
+    }
+    let date = new MyData(20,10,2021);
+    let ngay = date.getDay()
+    let thang = date.getMonth();
+    let nam = date.getYear();
+    alert(ngay+"/"+thang+"/"+nam);
+
+    date.setDay(22)
+    date.setMonth(12)
+    date.setYear(2222)
+
+    ngay = date.getDay()
+    thang = date.getMonth()
+    nam = date.getYear()
+    alert(ngay+"/"+thang+"/"+nam);
+     */
+    class MyDate{
+        constructor(ngay,thang,nam) {
+            this.day = ngay ;
+            this.month = thang;
+            this.year = nam;
+        }
+        getDay(){
+            return this.day;
+        }
+        getMonth(){
+            return this.month;
+        }
+        getYear(){
+            return this.year;
+        }
+        setDay(day){
+            this.day = day ;
+        }
+        setMonth(month){
+            this.month = month ;
+        }
+        setYear(year){
+            this.year = year ;
+        }
+        setDate(day,month,year){
+            this.day = day ;
+            this.month = month ;
+            this.year = year ;
+        }
+        toString(){
+            return this.day+"/"+this.month+"/"+this.year
+        }
+    }
+    let date = new MyDate(20,10,2021) ;
+    let ngay = date.getDay() ;
+    let thang = date.getMonth() ;
+    let nam = date.getYear() ;
+    alert(ngay+"/"+thang+"/"+nam) ;
+
+    date.day = "01" ;
+    date.month = "02" ;
+    date.year = "2019" ;
+
+    ngay = date.day ;
+    thang = date.month;
+    nam = date.year ;
+    alert(ngay+"/"+thang+"/"+nam)
+    date.setDate("02","02","2018");
+    alert(date.toString()) ;
+</script>
+
+</body>
+</html>
